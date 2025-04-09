@@ -26,6 +26,7 @@ export default function LoginPage() {
         alert("Login successful");
         localStorage.setItem("token", data.token);
         localStorage.setItem("userID", data.userID);
+        localStorage.setItem("userName", data.userName);
 
         navigate("/blogs"); 
       } else {

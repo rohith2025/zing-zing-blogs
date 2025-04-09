@@ -33,7 +33,7 @@ export default function BlogsPage() {
         const blogsFromBackend = res.data.map((blog: any) => ({
           id: blog.blogid?.toString() || blog._id?.toString(),
           title: blog.title,
-          author: blog.username || `User #${blog.userid}`,
+          author: blog.author || `User #${blog.userid}`,
           date: blog.date,
           summary: blog.content.slice(0, 200) + "...",
         }));
