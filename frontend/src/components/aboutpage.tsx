@@ -35,7 +35,7 @@ export default function AboutPage() {
             </div>
             <div>
               <img
-                src="https://cdn-icons-png.flaticon.com/256/3959/3959542.png"
+                src="https://i.ibb.co/Wv6yV4qs/Chat-GPT-Image-Apr-9-2025-08-36-53-PM.png"
                 alt="Team working"
                 className="rounded-2xl shadow-lg"
               />

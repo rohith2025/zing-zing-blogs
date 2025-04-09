@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import Footer from "./footer";
 import Navbar from "./navbar";
 import { hotTopics } from "../data/hottopics";
+import { creators } from "../data/creators";
+
+
 
 export default function HomePage() {
   const authors = [
@@ -60,7 +63,7 @@ export default function HomePage() {
             Featured Creators
           </h2>
           <div className="max-w-4xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
-            {authors.map((author, index) => (
+            {creators.map((author, index) => (
               <div
                 key={index}
                 className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition"

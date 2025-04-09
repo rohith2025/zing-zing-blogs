@@ -41,7 +41,15 @@ export default function NavbarSignedup({ user }: NavbarProps) {
   return (
     <nav className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-md sticky top-0 z-50 border-b-1">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-3xl font-extrabold tracking-wide">logo</div>
+      <div className="flex items-center h-10 w-2xs px-4">
+  <NavLink to="/blogs">
+    <img
+      src="https://i.ibb.co/Wv6yV4qs/Chat-GPT-Image-Apr-9-2025-08-36-53-PM.png"
+      alt="ZingZing Logo"
+      className="h-14 w-auto object-contain rounded-md shadow-sm"
+    />
+  </NavLink>
+</div>
 
         <div className="hidden md:flex space-x-8 text-lg items-center">
           <NavLink to="/blogs" className="hover:underline underline-offset-4">

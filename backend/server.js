@@ -4,17 +4,19 @@ const bodyParser = require('body-parser');
 const AutoIncrement = require('mongoose-sequence')(mongoose);
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
+require('dotenv').config();
+
 
 const app = express();
-const PORT = 3000;
-const JWT_SECRET = 'your-secret-key'; 
+const PORT = process.env.PORT;
+const JWT_SECRET = process.env.JWT_SECRET 
 
 
 app.use(bodyParser.json());
 app.use(cors());
 
 
-mongoose.connect('mongodb://localhost:27017/bdblogs', {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
